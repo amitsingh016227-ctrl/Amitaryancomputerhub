@@ -1,0 +1,252 @@
+
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computer Subject — पढ़ाई का पोर्टल</title>
+  <meta name="description" content="Computer subject website with syllabus, lectures, resources and quick quizzes." />
+  <!-- Tailwind CDN for quick styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    /* small custom styles */
+    .hero-bg { background: linear-gradient(135deg,#0ea5a4 0%, #2563eb 100%); }
+  </style>
+</head>
+<body class="bg-gray-50 text-slate-800">
+  <!-- NAV -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex justify-between items-center h-16">
+        <a href="#home" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-md bg-gradient-to-br from-sky-500 to-indigo-600 flex items-center justify-center text-white font-bold">CS</div>
+          <div class="hidden sm:block">
+            <h1 class="text-lg font-semibold">Computer Subject</h1>
+            <p class="text-xs text-slate-500">Study portal</p>
+          </div>
+        </a>
+        <nav class="hidden md:flex gap-4 items-center text-sm">
+          <a href="#syllabus" class="px-3 py-2 hover:bg-slate-100 rounded">Syllabus</a>
+          <a href="#lectures" class="px-3 py-2 hover:bg-slate-100 rounded">Lectures</a>
+          <a href="#resources" class="px-3 py-2 hover:bg-slate-100 rounded">Resources</a>
+          <a href="#quiz" class="px-3 py-2 hover:bg-slate-100 rounded">Quick Quiz</a>
+          <a href="#contact" class="px-3 py-2 bg-slate-800 text-white rounded">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="mobileBtn" class="p-2 rounded-md hover:bg-slate-100">☰</button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <div class="px-4 pt-2 pb-4 space-y-1">
+        <a href="#syllabus" class="block px-3 py-2 rounded hover:bg-slate-100">Syllabus</a>
+        <a href="#lectures" class="block px-3 py-2 rounded hover:bg-slate-100">Lectures</a>
+        <a href="#resources" class="block px-3 py-2 rounded hover:bg-slate-100">Resources</a>
+        <a href="#quiz" class="block px-3 py-2 rounded hover:bg-slate-100">Quick Quiz</a>
+        <a href="#contact" class="block px-3 py-2 rounded bg-slate-800 text-white">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="hero-bg text-white py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl sm:text-4xl font-extrabold">Computer Subject — आसान और व्यवस्थित पढ़ाई</h2>
+          <p class="mt-4 text-lg opacity-90">Syllabus, recorded lectures, notes, practice quizzes — सब एक जगह।</p>
+          <div class="mt-6 flex gap-3">
+            <a href="#lectures" class="px-4 py-2 bg-white text-slate-900 rounded shadow">Lectures देखो</a>
+            <a href="#quiz" class="px-4 py-2 border border-white rounded">Quick Quiz</a>
+          </div>
+        </div>
+        <div class="md:w-1/2 text-center">
+          <div class="inline-block bg-white/10 p-6 rounded-lg">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9f2a3f6d7f2a" alt="computer" class="w-72 rounded-lg shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYLLABUS -->
+    <section id="syllabus" class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <h3 class="text-2xl font-semibold">Syllabus</h3>
+      <p class="mt-2 text-slate-600">नीचे दिए गए टॉपिक्स आमतौर पर computer subject में आते हैं — आप इन्हें अपनी जरूरत के अनुसार एडिट कर सकते हैं।</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="p-4 bg-white rounded shadow">
+          <h4 class="font-semibold">Theory</h4>
+          <ul class="mt-2 text-sm list-disc list-inside text-slate-700">
+            <li>Computer Fundamentals</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Operating Systems</li>
+            <li>Database Systems</li>
+          </ul>
+        </div>
+        <div class="p-4 bg-white rounded shadow">
+          <h4 class="font-semibold">Programming</h4>
+          <ul class="mt-2 text-sm list-disc list-inside text-slate-700">
+            <li>C / C++ / Java basics</li>
+            <li>Web Development (HTML/CSS/JS)</li>
+            <li>Python for problem solving</li>
+          </ul>
+        </div>
+        <div class="p-4 bg-white rounded shadow">
+          <h4 class="font-semibold">Practical</h4>
+          <ul class="mt-2 text-sm list-disc list-inside text-slate-700">
+            <li>Lab exercises</li>
+            <li>Mini projects</li>
+            <li>Assignments & quizzes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LECTURES -->
+    <section id="lectures" class="bg-gradient-to-b from-white to-slate-50 py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h3 class="text-2xl font-semibold">Lectures</h3>
+        <p class="mt-2 text-slate-600">Recorded lectures and short notes. (ये sample embedded videos हैं — आप अपने YouTube links बदल सकते हैं.)</p>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white rounded shadow p-4">
+            <h4 class="font-semibold">Lecture 1 — Computer Fundamentals</h4>
+            <div class="mt-3 aspect-video">
+              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Lecture 1" class="w-full h-full rounded" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Short summary: Basics of hardware, software, number systems.</p>
+          </div>
+          <div class="bg-white rounded shadow p-4">
+            <h4 class="font-semibold">Lecture 2 — Introduction to Programming</h4>
+            <div class="mt-3 aspect-video">
+              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Lecture 2" class="w-full h-full rounded" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Short summary: Variables, conditionals, loops.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section id="resources" class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <h3 class="text-2xl font-semibold">Resources</h3>
+      <p class="mt-2 text-slate-600">Notes, cheat-sheets, recommended books and links.</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="p-4 bg-white rounded shadow">
+          <h4 class="font-semibold">Notes</h4>
+          <p class="mt-2 text-sm text-slate-700">Downloadable PDF notes (sample links).</p>
+          <ul class="mt-2 text-sm list-disc list-inside text-slate-700">
+            <li><a href="#" class="underline">Unit-1 Notes (PDF)</a></li>
+            <li><a href="#" class="underline">Unit-2 Notes (PDF)</a></li>
+          </ul>
+        </div>
+        <div class="p-4 bg-white rounded shadow">
+          <h4 class="font-semibold">Books</h4>
+          <p class="mt-2 text-sm text-slate-700">Recommended textbooks and online references.</p>
+        </div>
+        <div class="p-4 bg-white rounded shadow">
+          <h4 class="font-semibold">Tools</h4>
+          <p class="mt-2 text-sm text-slate-700">Online compilers, DB viewers, version control resources.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="bg-white py-12">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <h3 class="text-2xl font-semibold">Quick Quiz — 5 प्रश्न</h3>
+        <p class="mt-2 text-slate-600">नीचे एक छोटा सा interactive quiz है — जवाब चुनिए और "Check" दबाइए।</p>
+        <div id="quizApp" class="mt-6 bg-slate-50 p-6 rounded shadow">
+          <!-- Quiz will be rendered here by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <h3 class="text-2xl font-semibold">Contact / Feedback</h3>
+      <p class="mt-2 text-slate-600">Koi sujhav ho to bhejein — form bhar kar.</p>
+      <form id="contactForm" class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input name="name" placeholder="Naam" class="p-3 rounded border" required />
+        <input name="email" placeholder="Email" class="p-3 rounded border" required />
+        <textarea name="message" placeholder="Message" class="p-3 rounded border md:col-span-2" rows="4" required></textarea>
+        <button type="submit" class="md:col-span-2 px-4 py-2 bg-slate-800 text-white rounded">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-900 text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center text-sm">
+      © 2025 Computer Subject — Made with ❤️
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Mobile toggle
+    document.getElementById('mobileBtn').addEventListener('click', function(){
+      const m = document.getElementById('mobileMenu');
+      m.classList.toggle('hidden');
+    });
+
+    // Quiz data
+    const quizData = [
+      {q: 'CPU ka full form kya hai?', a: ['Central Processing Unit','Computer Primary Unit','Central Program Unit'], correct: 0},
+      {q: 'Binary number system base kitna hota hai?', a: ['2','8','10'], correct: 0},
+      {q: 'Which is a non-volatile memory?', a: ['RAM','ROM','Register'], correct: 1},
+      {q: 'HTML stands for?', a: ['HyperText Markup Language','HighText Machine Language','Hyperlink and Text Markup Language'], correct: 0},
+      {q: 'Which data structure uses FIFO?', a: ['Stack','Queue','Tree'], correct: 1}
+    ];
+
+    const quizApp = document.getElementById('quizApp');
+    function renderQuiz(){
+      quizApp.innerHTML = '';
+      quizData.forEach((item, idx) => {
+        const card = document.createElement('div');
+        card.className = 'mb-4 p-4 bg-white rounded shadow';
+        let html = `<div class="font-semibold">${idx+1}. ${item.q}</div>`;
+        html += '<div class="mt-2 space-y-2">';
+        item.a.forEach((opt, i) => {
+          html += `\n<label class='flex items-center gap-2'>\n  <input type='radio' name='q${idx}' value='${i}' />\n  <span class='text-sm'>${opt}</span>\n</label>`;
+        });
+        html += '</div>';
+        card.innerHTML = html;
+        quizApp.appendChild(card);
+      });
+      const btn = document.createElement('button');
+      btn.className = 'px-4 py-2 bg-sky-600 text-white rounded';
+      btn.textContent = 'Check Answers';
+      btn.addEventListener('click', checkAnswers);
+      quizApp.appendChild(btn);
+
+      const resultDiv = document.createElement('div');
+      resultDiv.id = 'quizResult';
+      resultDiv.className = 'mt-4 text-sm';
+      quizApp.appendChild(resultDiv);
+    }
+
+    function checkAnswers(){
+      let score = 0;
+      quizData.forEach((item, idx) => {
+        const radios = document.getElementsByName('q'+idx);
+        let chosen = -1;
+        radios.forEach(r => { if(r.checked) chosen = parseInt(r.value); });
+        if(chosen === item.correct) score++;
+      });
+      const res = document.getElementById('quizResult');
+      res.innerHTML = `<div class='p-3 rounded ${score>=3 ? "bg-green-100 text-green-800" : "bg-rose-100 text-rose-800"}'>आपका score: <strong>${score} / ${quizData.length}</strong></div>`;
+    }
+
+    renderQuiz();
+
+    // Contact form simple handler
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thank you! आपका संदेश मिल गया है.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
